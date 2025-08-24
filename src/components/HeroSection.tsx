@@ -39,8 +39,8 @@ export const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold"
           >
-            <span className="neon-text">Alex</span>{' '}
-            <span className="text-foreground">Developer</span>
+            <span className="neon-text">Anas</span>{' '}
+            <span className="text-foreground">Zia</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -50,9 +50,9 @@ export const HeroSection = () => {
             transition={{ delay: 0.6 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            I craft{' '}
-            <span className="text-accent font-semibold">digital experiences</span>{' '}
-            that blend creativity with cutting-edge technology
+            Code meets{' '}
+            <span className="text-accent font-semibold">intelligence,</span>{' '}
+            Crafting AI-driven solutions for tomorrow.”
           </motion.p>
 
           {/* CTA Buttons */}
@@ -85,7 +85,7 @@ export const HeroSection = () => {
             className="flex justify-center space-x-6 pt-8"
           >
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
+              { icon: Github, href: 'https://github.com/anaszia60', label: 'GitHub' },
               { icon: Linkedin, href: '#', label: 'LinkedIn' },
               { icon: Mail, href: '#', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (

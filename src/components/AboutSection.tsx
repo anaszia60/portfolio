@@ -40,19 +40,17 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate <span className="text-primary font-semibold">full-stack developer</span> with 
-              a love for creating innovative digital solutions. My journey in tech started with curiosity 
-              and has evolved into a mission to build experiences that make a difference.
+              I'm a passionate <span className="text-primary font-semibold">Software Engineering</span> student with a strong focus on Artificial Intelligence. My journey started with traditional Machine Learning, grew into Deep Learning, and has now expanded into Large Language Models and Agentic AI. I enjoy building intelligent systems that blend creativity with technical depth, pushing the limits of what’s possible.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring the latest in{' '}
-              <span className="text-accent font-semibold">AI and machine learning</span>, contributing to 
+              Beyond code, I love exploring how technology is evolving — whether it’s AI, cybersecurity, or space tech — constantly learning and connecting ideas about where the future is heading.I also enjoy contributing in{' '}
+              <span className="text-accent font-semibold">AI and machine learning</span>
               open-source projects, or mentoring aspiring developers in the community.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AI/ML', 'Cloud'].map((tech) => (
+              {['Python', 'Machine learning', 'Large Lnaguage Models(LLMs)', 'Agentic AI', 'Cloud', 'Generative AI'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 glass-card glow-border rounded-full text-sm font-medium"

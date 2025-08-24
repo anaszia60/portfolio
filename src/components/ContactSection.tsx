@@ -10,25 +10,25 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'alex@example.com',
-    href: 'mailto:alex@example.com'
+    value: 'anaszia02@gmail.com',
+    href: 'mailto:anaszia02@gmail.com'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567'
+    value: '+923328524600',
+    href: 'tel:+923328524600'
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'San Francisco, CA',
+    value: 'Islamabad, Pakistan',
     href: '#'
   }
 ];
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
+  { icon: Github, href: 'https://github.com/anaszia60', label: 'GitHub' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
   { icon: Twitter, href: '#', label: 'Twitter' },
 ];

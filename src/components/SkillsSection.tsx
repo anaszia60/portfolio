@@ -12,42 +12,25 @@ import {
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    icon: Code2,
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
-    color: 'primary'
+    title: 'AI & ML',
+    icon: Brain,
+    skills: ['Machine Learning', 'TensorFlow', 'PyTorch', 'OpenCV', 'NLP', 'Data Science', 'LLMs & Agentic AI', 'LangChain', 'OpenAI API'],
+    color: 'neon-cyan'
   },
   {
-    title: 'Backend',
+    title: 'Backend & Programming',
     icon: Database,
-    skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs'],
+    skills: ['Python', 'C++', 'SQL', 'FastAPI'],
     color: 'accent'
-  },
-  {
-    title: 'Design',
-    icon: Palette,
-    skills: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Prototyping', 'Design Systems'],
-    color: 'neon-green'
   },
   {
     title: 'Cloud & DevOps',
     icon: Cloud,
-    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Monitoring'],
+    skills: ['AWS', 'Docker', 'Git & GitHub'],
     color: 'electric-blue'
-  },
-  {
-    title: 'Mobile',
-    icon: Smartphone,
-    skills: ['React Native', 'Flutter', 'iOS', 'Android', 'Cross-platform', 'App Store'],
-    color: 'neon-purple'
-  },
-  {
-    title: 'AI & ML',
-    icon: Brain,
-    skills: ['TensorFlow', 'PyTorch', 'OpenAI API', 'Computer Vision', 'NLP', 'Data Science'],
-    color: 'neon-cyan'
   }
 ];
+
 
 export const SkillsSection = () => {
   return (
