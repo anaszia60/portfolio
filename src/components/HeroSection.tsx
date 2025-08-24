@@ -3,10 +3,18 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const HeroSection = () => {
+  // Scroll functions
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -52,7 +60,7 @@ export const HeroSection = () => {
           >
             Code meets{' '}
             <span className="text-accent font-semibold">intelligence,</span>{' '}
-            Crafting AI-driven solutions for tomorrow.”
+            Crafting AI-driven solutions for tomorrow.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -62,16 +70,21 @@ export const HeroSection = () => {
             transition={{ delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
+            {/* Scroll to Projects */}
             <Button 
               size="lg" 
               className="glow-border px-8 py-6 text-lg font-semibold bg-primary/10 hover:bg-primary/20 transition-all duration-300"
+              onClick={scrollToProjects}   // <-- scroll to projects
             >
               View My Work
             </Button>
+
+            {/* Connect button */}
             <Button 
               variant="outline" 
               size="lg"
               className="glow-border px-8 py-6 text-lg font-semibold bg-background/5 hover:bg-background/10 transition-all duration-300"
+              onClick={scrollToNext}       // scroll to about section if needed
             >
               Let's Connect
             </Button>
@@ -86,7 +99,7 @@ export const HeroSection = () => {
           >
             {[
               { icon: Github, href: 'https://github.com/anaszia60', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/anas-zia-a31b021a7/', label: 'LinkedIn' },
               { icon: Mail, href: '#', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
