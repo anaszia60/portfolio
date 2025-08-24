@@ -61,7 +61,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom futuristic colors
+				'neon-cyan': 'hsl(var(--neon-cyan))',
+				'neon-purple': 'hsl(var(--neon-purple))',
+				'neon-green': 'hsl(var(--neon-green))',
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'deep-space': 'hsl(var(--deep-space))',
+				'space-gray': 'hsl(var(--space-gray))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'glow-cyan': 'var(--glow-cyan)',
+				'glow-purple': 'var(--glow-purple)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +101,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'float-slow': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-10px) rotate(180deg)' }
+				},
+				'rotate': {
+					'from': { transform: 'rotate(0deg)' },
+					'to': { transform: 'rotate(360deg)' }
+				},
+				'pulse-glow': {
+					'0%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.2)' },
+					'100%': { boxShadow: '0 0 30px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--accent) / 0.2)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'float-slow': 'float-slow 8s ease-in-out infinite',
+				'rotate': 'rotate 20s linear infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate'
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'monospace'],
+				'tech': ['Orbitron', 'monospace']
 			}
 		}
 	},
